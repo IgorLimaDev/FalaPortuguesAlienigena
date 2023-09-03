@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Fala Português, alienígena filho da puta</title>
+	<style>
+		body {padding:30px;}
+	</style>
+  </head>
+  <body>
+	<div class="container text-center">
+		<h2>Clique no botão e obtenha um nome adequado para uma matéria qualquer da Veja/Exame/Estadão sobre Trabalho</h2>
+		<button class="btn btn-success" onClick="generateRandomName()">Gerar!</button>
+		<h1 class="nome-gerado"></h1>
+	</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		const adjectives = [
+	  "dedicated", "hardworking", "skilled", "efficient", "productive",
+	  "creative", "motivated", "organized", "committed", "innovative",
+	  "reliable", "enthusiastic", "professional", "team-oriented", "focused",
+	  "dynamic", "detail-oriented", "goal-driven", "experienced", "persistent",
+	  "self-motivated", "resourceful", "adaptable", "cooperative", "driven",
+	  "knowledgeable", "proactive", "effective", "results-oriented", "problem-solving",
+	  "collaborative", "strategic", "communicative", "adaptable", "excellent",
+	  "skilled", "efficient", "effective", "responsible", "creative",
+	  "enthusiastic", "innovative", "dedicated", "proactive", "dependable",
+	  "insightful", "ambitious", "driven", "dynamic", "collaborative"
+	];
+	
+	const gerundVerbs = [
+	  "working", "planning", "designing", "solving", "collaborating",
+	  "delivering", "improving", "achieving", "communicating", "learning",
+	  "managing", "analyzing", "evaluating", "coordinating", "researching",
+	  "implementing", "leading", "mentoring", "teaching", "supporting",
+	  "inspiring", "negotiating", "programming", "developing", "mentoring",
+	  "guiding", "supervising", "coaching", "training", "presenting",
+	  "facilitating", "negotiating", "strategizing", "mentoring", "influencing",
+	  "streamlining", "optimizing", "innovating", "directing", "motivating",
+	  "constructing", "creating", "streamlining", "monitoring", "forecasting",
+	  "empowering", "initiating", "designing", "leading", "supervising"
+	];
+	
+	function generateRandomName() {
+	  const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+	  const randomGerundVerb = gerundVerbs[Math.floor(Math.random() * gerundVerbs.length)];
+	
+	  document.querySelector(".nome-gerado").innerHTML = `${randomAdjective} ${randomGerundVerb}`;
+	}
+
+	</script>  
+</body>
+</html>
+
+
+
+
+
+
